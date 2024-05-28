@@ -1,0 +1,29 @@
+:root {
+    --primary: #fe9e0d;
+    --secondary: #0d9efe ;
+    --body_background_color: #f6f6f6;
+    --black: #000;
+    --white: #fff;
+}
+
+.lead {
+    font-size: 18px;
+}
+
+.text-white {
+    color: var(--white) !important;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p {
+  color: inherit;
+}
+
+.text-center {
+    text-align: center !important;
+}
