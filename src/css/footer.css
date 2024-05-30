@@ -1,0 +1,19 @@
+.theme-change-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99999;
+}
+button.color-mode__btn {
+    align-items: center;
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 100px;
+    color: var(--white);
+    display: inline-flex;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 38px;
+    padding: 7px 20px 6px 25px;
+}

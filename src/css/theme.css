@@ -1,9 +1,17 @@
 :root {
     --primary: #fe9e0d;
     --secondary: #0d9efe ;
+    --body__color: #000;
     --body_background_color: #f6f6f6;
     --black: #000;
     --white: #fff;
+}
+
+:root[data-theme="dark"] {
+    --body_background_color: #000;
+    --body__color: #fff;
+    --black: #fff;
+    --white: #000;
 }
 
 .lead {

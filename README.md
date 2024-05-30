@@ -1,3 +1,4 @@
 - Header Added Globally
 - Footer Added Globally
 - Routes Configured
+- Langauage Switcher Configured

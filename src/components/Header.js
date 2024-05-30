@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { PROJECT_TITLE, SUPPORTED_LANG, images } from "../utils/constants";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { changeLanguage } from "../utils/configSlice";
 
@@ -77,26 +77,48 @@ const Header = () => {
           <nav>
             <ul className="level-1">
               <li>
-                <Link to="/" onClick={closemenu}>
+                <NavLink to="/" activeClassName="active" onClick={closemenu}>
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/about" onClick={closemenu}>
+                <NavLink
+                  to="/about"
+                  activeClassName="active"
+                  onClick={closemenu}
+                >
                   About
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/contact" onClick={closemenu}>
+                <NavLink
+                  to="/contact"
+                  activeClassName="active"
+                  onClick={closemenu}
+                >
                   Contact
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </nav>
           <div className="cta-group">
             <div className="lang-switcher" ref={langSwitcherRef}>
               <div className="lang-icon" onClick={handleLanguageMenu}>
-                Svg
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+                  <g
+                    fill="none"
+                    stroke="#000"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  >
+                    <circle cx="36" cy="36" r="28" />
+                    <path d="m36 8v56c-8.5604 0-15.5-12.536-15.5-28s6.9396-28 15.5-28 15.5 12.536 15.5 28-6.9396 28-15.5 28" />
+                    <path d="m64 36h-56" />
+                    <path d="m60 22h-48" />
+                    <path d="m60 50h-48" />
+                  </g>
+                </svg>
               </div>
               <ul>
                 {SUPPORTED_LANG.map((lang) => {

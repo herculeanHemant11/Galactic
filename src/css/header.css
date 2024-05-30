@@ -28,6 +28,9 @@ header.header {
   font-size: 1.1rem;
   font-weight: 600;
 }
+.header-menu ul li a.active {
+  color: var(--primary);
+}
 .header button {
   font-size: 14px;
 }
@@ -37,6 +40,17 @@ header.header {
 }
 .lang-icon {
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.color-mode__btn svg,
+.color-mode__btn svg g,
+.color-mode__btn svg path {
+  fill: transparent;
+  stroke: var(--white);
+}
+.color-mode__btn svg {
+  margin-left: 10px;
 }
 
 @media (min-width: 767.1px) {
@@ -51,7 +65,10 @@ header.header {
   }
   .lang-icon {
     color: var(--white);
-}
+  }
+  .lang-icon g {
+    stroke: var(--white);
+  }
   .lang-switcher ul {
     display: none;
     background-color: var(--white);
@@ -62,35 +79,35 @@ header.header {
     top: 100%;
     left: 0;
     border-radius: 4px;
-}
+  }
 
-.lang-switcher.active ul {
+  .lang-switcher.active ul {
     display: block;
-}
+  }
 
-.lang-switcher ul li {
+  .lang-switcher ul li {
     margin-right: 0;
     cursor: pointer;
     font-size: 18px;
-}
+  }
 
-.lang-switcher {
+  .lang-switcher {
     position: relative;
-}
+  }
 
-.lang-switcher ul li:hover,
-.lang-switcher ul li.active {
+  .lang-switcher ul li:hover,
+  .lang-switcher ul li.active {
     color: var(--primary);
-}
+  }
 
-.lang-switcher ul li:not(:last-child) {
+  .lang-switcher ul li:not(:last-child) {
     margin-bottom: 6px;
-}
+  }
 }
 @media (max-width: 767px) {
-    header.header {
-        padding: 20px 0;
-    }
+  header.header {
+    padding: 20px 0;
+  }
   .header-menu {
     display: none;
   }

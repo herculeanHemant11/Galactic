@@ -9,6 +9,7 @@ font-family: "Reem Kufi", sans-serif;
 font-optical-sizing: auto;
 line-height: 1.4;
 font-weight: 400;
+color: var(--body__color);
 background-color: var(--body_background_color);
 }
 

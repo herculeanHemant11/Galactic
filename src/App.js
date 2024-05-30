@@ -5,6 +5,7 @@ import Home from "../src/pages/Home";
 import About from "../src/pages/About";
 import Contact from "../src/pages/Contact";
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
+import ThemeMode from "./components/ThemeMode";
 
 const Layout = () => (
   <div className="body-wrapper">
@@ -13,6 +14,7 @@ const Layout = () => (
       <Outlet />
     </main>
     <Footer />
+    <ThemeMode />
   </div>
 );
 
