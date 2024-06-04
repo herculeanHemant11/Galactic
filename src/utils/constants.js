@@ -1,5 +1,6 @@
 export const images = {
   logo: require("../assets/images/logo.svg").default,
+  teamDiscuss: require("../assets/images/team-discussing.jpg"),
 };
 
 export const PROJECT_TITLE = "Galactic";

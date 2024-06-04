@@ -1,3 +1,15 @@
+.dnd-section {
+    padding: 40px 0;
+}
 .top-content {
     margin-bottom: 32px;
+}
+.d-flex {
+    display: flex;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.align-center {
+    align-items: center;
 }
