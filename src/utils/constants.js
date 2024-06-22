@@ -1,3 +1,6 @@
+export const REST_API =
+  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.5535&lng=77.2588&page_type=DESKTOP_WEB_LISTING";
+
 export const images = {
   logo: require("../assets/images/logo.svg").default,
   teamDiscuss: require("../assets/images/team-discussing.jpg"),
@@ -5,7 +8,7 @@ export const images = {
 
 export const PROJECT_TITLE = "Galactic";
 
-export const HOME_VIDEO = require("../assets/videos/Galaxy Motion Background Video.mp4");
+export const HOME_VIDEO = require("../assets/videos/Close-Up View Of Spaghetti Noodles.mp4");
 
 export const SUPPORTED_LANG = [
   {
