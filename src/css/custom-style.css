@@ -1,95 +1,63 @@
 .video-banner {
-    position: relative;
-    width: 100%;
-    padding-top: 272px;
-    padding-right: 0px;
-    padding-bottom: 168px;
-    padding-left: 0px;
+  position: relative;
+  width: 100%;
+  padding-top: 272px;
+  padding-right: 0px;
+  padding-bottom: 168px;
+  padding-left: 0px;
 }
 .overlay {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .video-bg {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .video-bg video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .z-1 {
-    z-index: 1;
+  z-index: 1;
 }
 .content {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
-.res-card {
-    border-radius: 1.5rem;
-    border: 0.1rem solid;
-    border-color: var(--body_background_color);
-    padding: 1rem;
-    transition: 0.15s all linear;
+.hero-banner {
+  padding: 120px 0;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
-
-.res-card:hover {
-    border-color: rgb(232, 232, 232);
-    box-shadow: rgba(28, 28, 28, 0.12) 0px 0.4rem 1.8rem;
-    box-sizing: border-box;
-}
-
-[data-theme="dark"] .res-card:hover{
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0.4rem 1.8rem;
-}
-.res-card-img {
-    position: relative;
-    padding-bottom: 66.666%;
-}
-.res-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 16px;
-    position: absolute;
-    top: 0;
-    left: 0;
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary);
+  opacity: 0.5;
 }
 
-.res-title {
-    line-height: 1.2;
-    margin-block-end: 0px;
-    font-weight: 500;
-    text-align: left;
-    font-size: 18px;
-    margin: 0.8rem 0px 0.6rem;
-}
-.res-meta-top {
+@media (min-width: 768px) {
+  .hero-banner {
+    min-height: 768px;
     display: flex;
-}
-
-.rating-icon {
-    margin-top: -2px;
-    margin-right: 8px;
-}
-
-.cusines {
-    display: -webkit-box;
-    overflow-wrap: break-word;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    margin-top: 8px;
-    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }

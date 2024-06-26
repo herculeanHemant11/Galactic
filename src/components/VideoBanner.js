@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoBanner = ({ video, title, description }) => {
   return (
-    <div className="video-banner text-white text-center">
+    <div className="video-banner text-black text-center">
       <div className="overlay z-1"></div>
       <div className="video-bg">
         <video autoPlay loop muted>
