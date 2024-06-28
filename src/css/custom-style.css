@@ -52,6 +52,53 @@
   background-color: var(--secondary);
   opacity: 0.5;
 }
+.feature-cards-wrap .media {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    height: 100%;
+    padding-top: 26px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background-color: var(--dark);
+    border-radius: 20px;
+    align-items: flex-start;
+    display: flex;
+}
+
+.feature-cards-wrap .image-wrap {
+    margin-right: 0.9375rem;
+    position: relative;
+}
+
+.feature-cards-wrap 
+ .image-wrap-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s ease;
+    background-color: var(--black);
+}
+
+.image-wrap img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.media-body {
+    flex: 1;
+}
 
 @media (min-width: 768px) {
   .hero-banner {

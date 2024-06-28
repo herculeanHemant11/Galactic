@@ -6,7 +6,7 @@ export const images = {
   teamDiscuss: require("../assets/images/team-discussing.jpg"),
 };
 
-export const PROJECT_TITLE = "Galactic";
+export const PROJECT_TITLE = "DineEasy";
 
 export const HOME_VIDEO = require("../assets/videos/Close-Up View Of Spaghetti Noodles.mp4");
 
