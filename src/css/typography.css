@@ -13,27 +13,27 @@ color: var(--body__color);
 background-color: var(--body_background_color);
 }
 
-h1 {
+h1, .h1 {
     font-size: 48px;
 }
 
-h2 {
+h2, .h2 {
     font-size: 40px;
 }
 
-h3 {
+h3, .h3 {
     font-size: 32px;
 }
 
-h4 {
+h4, .h4 {
     font-size: 26px;
 }
 
-h5 {
+h5, .h5 {
     font-size: 22px;
 }
 
-h6, lead {
+h6, lead, .h6 {
     font-size: 18px;
 }
 
@@ -66,24 +66,24 @@ button, .button {
     cursor: pointer;
     background-color: var(--primary);
     border-color: var(--primary);
-    color: #fff;
+    color: #000;
     display: inline-block;
     text-decoration: none;
 }
 button:hover {
     background-color: var(--secondary);
     border-color: var(--secondary);
-    color: #fff;
+    color: #000;
 }
 button.secondary {
     background-color: var(--secondary);
     border-color: var(--secondary);
-    color: #fff;
+    color: #000;
 }
 button.secondary:hover {
     background-color: var(--primary);
     border-color: var(--primary);
-    color: #fff;
+    color: #000;
 }
 img {
     max-width: 100%;

@@ -2,7 +2,7 @@ import React from "react";
 
 const Privacy = () => {
   return (
-    <div className="large-padding">
+    <div className="banner-top-padding large-padding container">
       <h1>Privacy Policy</h1>
       <p>
         <strong>Effective Date:</strong> [Insert Date]
@@ -110,19 +110,6 @@ const Privacy = () => {
         of any changes by posting the new Privacy Policy on our app. Your
         continued use of the app after any changes indicates your acceptance of
         the new Privacy Policy.
-      </p>
-
-      <h3 className="h2">8. Contact Us</h3>
-      <p>
-        If you have any questions or concerns about this Privacy Policy, please
-        contact us at:
-      </p>
-      <p>
-        <strong>DineEasy Support Team</strong>
-        <br />
-        Email: [Insert Email Address]
-        <br />
-        Phone: [Insert Phone Number]
       </p>
     </div>
   );

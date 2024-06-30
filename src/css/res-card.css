@@ -1,5 +1,8 @@
 .sorting-buttons {
     margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .res-card {

@@ -60,8 +60,9 @@ header.header {
   }
   .header-menu ul {
     align-items: center;
+    margin-right: 1rem;
   }
-  .header-menu ul li {
+  .header-menu ul li:not(:last-child) {
     margin-right: 3rem;
   }
   .lang-icon {

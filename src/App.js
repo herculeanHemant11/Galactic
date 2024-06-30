@@ -1,10 +1,11 @@
 import React from "react";
+import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "../src/pages/Home";
 import About from "../src/pages/About";
 import Contact from "../src/pages/Contact";
-import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
+import Privacy from "./components/Privacy";
 import ThemeMode from "./components/ThemeMode";
 
 const Layout = () => (
@@ -34,6 +35,10 @@ const appRoute = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/privacy",
+        element: <Privacy />,
       },
     ],
   },

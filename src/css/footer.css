@@ -17,3 +17,36 @@ button.color-mode__btn {
     line-height: 38px;
     padding: 7px 20px 6px 25px;
 }
+
+footer.footer {  
+  width: 100%;  
+  background-color: var(--card-background-color);
+}
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+}
+.footer-menu ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.footer-bottom {
+    padding-top: 32px;
+}
+
+.footer-bottom a {
+    color: var(--black);    
+}
+
+@media (max-width: 767px) {
+    .footer-menu ul {
+        flex-direction: column;
+    }
+}

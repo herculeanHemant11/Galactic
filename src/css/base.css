@@ -17,11 +17,17 @@
     padding-top: 80px;
     padding-bottom: 80px;
 }
+.banner-top-padding {
+    padding-top: 120px;
+}
 
 @media (max-width: 991px) {
     .large-padding {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.banner-top-padding {
+    padding-top: 100px;
 }
 
 }

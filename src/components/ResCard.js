@@ -13,7 +13,7 @@ const ResCard = ({ data }) => {
             alt="Chinese Wok"
           />
         </div>
-        <h4 className="res-title">{data.info.name}</h4>
+        <h2 className="res-title h4">{data.info.name}</h2>
         <div className="res-meta">
           <div className="res-meta-top">
             <div className="rating-icon">
