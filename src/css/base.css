@@ -21,6 +21,10 @@
     padding-top: 120px;
 }
 
+.system-error {
+    padding: 14rem 0;
+}
+
 @media (max-width: 991px) {
     .large-padding {
     padding-top: 60px;

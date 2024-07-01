@@ -7,6 +7,7 @@ import About from "../src/pages/About";
 import Contact from "../src/pages/Contact";
 import Privacy from "./components/Privacy";
 import ThemeMode from "./components/ThemeMode";
+import NotFound from "./components/NotFound";
 
 const Layout = () => (
   <div className="body-wrapper">
@@ -39,6 +40,10 @@ const appRoute = createBrowserRouter([
       {
         path: "/privacy",
         element: <Privacy />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },

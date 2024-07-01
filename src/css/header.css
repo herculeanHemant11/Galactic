@@ -69,7 +69,7 @@ header.header {
     color: var(--white);
   }
   .lang-icon g {
-    stroke: var(--white);
+    stroke: var(--black);
   }
   .lang-switcher ul {
     display: none;
