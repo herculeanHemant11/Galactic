@@ -100,6 +100,46 @@
     flex: 1;
 }
 
+.column {
+  width: 100%;
+  max-width: 25%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.shimmer-box {
+  background-color: #e2e8f0;
+  height: 8rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.shimmer-heading {
+  background-color: #e2e8f0;
+  height: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.shimmer-subheading {
+  background-color: #e2e8f0;
+  height: 0.75rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.shimmer-text {
+  background-color: #e2e8f0;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.mb-large {
+  margin-bottom: 2.5rem;
+}
+
+
 @media (min-width: 768px) {
   .hero-banner {
     min-height: 768px;

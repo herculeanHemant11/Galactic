@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import RecentPost from "../components/RecentPost";
 import ResCard from "../components/ResCard";
 import useGetRestData from "../hooks/useGetRestData";
+import Shimmer from "../components/Shimmer";
 
 const Home = () => {
   const selectedLanguage = useSelector((store) => store.config.lang);
@@ -31,9 +32,22 @@ const Home = () => {
             <button onClick={() => handleSort("cost")}>Cost</button>
           </div>
           <div className="row">
-            {resData.map((res) => (
-              <ResCard key={res.info.id} data={res} />
-            ))}
+            {resData.length === 0 ? (
+              <div className="container">
+                <div className="row">
+                  {/* Shimmer loading placeholders */}
+                  {[...Array(12)].map((_, index) => (
+                    <Shimmer key={index} />
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <>
+                {resData.map((res) => (
+                  <ResCard key={res.info.id} data={res} />
+                ))}
+              </>
+            )}
           </div>
         </div>
       </div>
