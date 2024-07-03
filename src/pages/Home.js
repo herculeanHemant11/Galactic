@@ -33,14 +33,12 @@ const Home = () => {
           </div>
           <div className="row">
             {resData.length === 0 ? (
-              <div className="container">
-                <div className="row">
-                  {/* Shimmer loading placeholders */}
-                  {[...Array(12)].map((_, index) => (
-                    <Shimmer key={index} />
-                  ))}
-                </div>
-              </div>
+              <>
+                {/* Shimmer loading placeholders */}
+                {[...Array(12)].map((_, index) => (
+                  <Shimmer key={index} />
+                ))}
+              </>
             ) : (
               <>
                 {resData.map((res) => (

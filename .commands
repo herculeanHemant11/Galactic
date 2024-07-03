@@ -1,0 +1,11 @@
+For pushing code to github.
+$ git add .
+$ git commit -m "message"
+$ git push
+
+for deploy code to firebase
+// first build production build then deploy to firebase.
+
+$ npm run build
+$ firebase deploy
+
