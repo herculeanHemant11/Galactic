@@ -6,7 +6,8 @@
     --black: #000;
     --white: #fff; 
     --card-background-color: #f6f6f6;
-    --border-color: #ddd;       
+    --border-color: #ddd;   
+    --error: #942e1e;    
 }
 
 :root[data-theme="dark"] {
@@ -17,6 +18,7 @@
     --dark: #2a2a2a;
     --card-background-color: #2a2a2a;
     --border-color: #444;
+    --error: #D5442A;
 }
 
 .lead {

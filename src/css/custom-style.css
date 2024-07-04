@@ -171,6 +171,42 @@
   margin-bottom: 2.5rem;
 }
 
+.form {
+    padding: 32px;
+    background-color: var(--card-background-color);
+    color: var(--black);
+    border: 1px solid var(--border-color);
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form label, .form input, .form textarea {
+    width: 100%;
+    display: block;
+}
+
+input[type="text"], input[type="email"],
+input[type="password"], textarea {
+    min-height: 48px;
+    padding: 10px 15px;
+}
+
+textarea {
+    min-height: 180px;
+}
+
+.form label {
+    margin-bottom: 8px;
+}
+
+.form span.error {
+  padding-top: 4px;
+  display: inline-block;
+  color: var(--error);
+}
 
 @media (min-width: 768px) {
   .hero-banner {
