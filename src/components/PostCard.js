@@ -13,7 +13,7 @@ const PostCard = ({ title, description, imageUrl, link, buttonText }) => {
         </div>
         <div className="card-content">
           <div className="card-content-top">
-            <h4 className="heading">{title}</h4>
+            <h3 className="heading">{title}</h3>
             <div className="card-description">
               <p>{description}</p>
             </div>

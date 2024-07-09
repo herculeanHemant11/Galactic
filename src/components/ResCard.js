@@ -2,7 +2,7 @@ import React from "react";
 
 const ResCard = ({ data }) => {
   return (
-    <div className="col-md-6 col-xl-3 col-lg-4">
+    <div className="col-md-6 col-xl-4 col-lg-4">
       <div className="res-card">
         <div className="res-card-img">
           <img
@@ -59,6 +59,7 @@ const ResCard = ({ data }) => {
           </div>
           <div className="cusines">{data.info.cuisines.join(", ")}</div>
           <div className="location">{data.info.areaName}</div>
+          <div className="cost">Price - {data.info.costForTwo}</div>
         </div>
       </div>
     </div>

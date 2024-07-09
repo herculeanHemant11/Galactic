@@ -21,7 +21,7 @@ const FeatureCard = ({ title, subTitle, iconUrl }) => {
           />
         </div>
         <div className="media-body">
-          <h6 className="card-heading text-auto">{title}</h6>
+          <h2 className="card-heading text-auto h6">{title}</h2>
           <div className="card-description text-auto">
             <p>{subTitle}</p>
           </div>
