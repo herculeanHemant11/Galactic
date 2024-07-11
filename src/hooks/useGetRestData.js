@@ -4,6 +4,7 @@ import { REST_API } from "../utils/constants";
 const useGetRestData = (sortBy) => {
   const [resData, setResData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [maxCost, setMaxCost] = useState(0);
 
   const getResData = async () => {
     setLoading(true);
@@ -20,8 +21,10 @@ const useGetRestData = (sortBy) => {
       const maxPrice = resData.reduce((max, item) => {
         return item.info.costForTwo > max ? item.info.costForTwo : max;
       }, resData[0].info.costForTwo);
-
-      console.log(maxPrice);
+      let maxCostValue = maxPrice.match(/\d+/);
+      maxCostValue = maxCostValue ? Number(maxCostValue[0]) : 0;
+      setMaxCost(maxCostValue);
+      console.log(maxCostValue);
 
       switch (sortBy) {
         case "rating":
@@ -53,7 +56,7 @@ const useGetRestData = (sortBy) => {
     getResData();
   }, [sortBy]);
 
-  return { resData, loading };
+  return { resData, loading, maxCost };
 };
 
 export default useGetRestData;

@@ -11,7 +11,9 @@ import Shimmer from "../components/Shimmer";
 const Home = () => {
   const selectedLanguage = useSelector((store) => store.config.lang);
   const [sortBy, setSortBy] = useState(null);
-  const { resData, loading } = useGetRestData(sortBy);
+  const { resData, loading, maxCost } = useGetRestData(sortBy);
+  const [priceValue, setPriceValue] = useState(maxCost);
+  const intervalSize = (maxCost - 100) / 4;
 
   const handleSort = (sortType) => {
     setSortBy(sortType);
@@ -26,8 +28,9 @@ const Home = () => {
         "%, #fff " +
         value +
         "%, white 100%)";
+      setPriceValue(this.value);
     };
-  }, []);
+  }, [maxCost]);
   return (
     <div>
       <VideoBanner
@@ -48,13 +51,24 @@ const Home = () => {
                 <button onClick={() => handleSort("cost")}>Cost</button>
               </div>
               <span className="filter-title">Filter</span>
-              <div className="price-range">
+              <div className="">
                 <div className="filter-title">Price</div>
+                <div className="price-list">
+                  <span>100</span>
+                  {[...Array(3)].map((_, index) => (
+                    <span key={index + 1}>
+                      {100 + intervalSize * (index + 1)}
+                    </span>
+                  ))}
+                  <span>{maxCost}</span>
+                </div>
                 <input
                   id="price-range"
                   type="range"
                   min="100"
-                  max="500"
+                  max={maxCost}
+                  value={priceValue}
+                  step="20"
                 ></input>
               </div>
             </div>

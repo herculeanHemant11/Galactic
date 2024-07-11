@@ -82,6 +82,10 @@ input[type="range"] {
   transition: background 450ms ease-in;
   -webkit-appearance: none;
 }
+.price-list {
+    display: flex;
+    justify-content: space-between;
+}
 @media (min-width: 992px) {
     .filter-col {
     padding-right: 32px;
